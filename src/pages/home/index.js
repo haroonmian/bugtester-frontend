@@ -16,7 +16,7 @@ const Home = (props) => {
         createdBy: user.username,
         assignedTo: user.username,
         status: null,
-        priority: null,
+        priority: "heigh",
         UserId: user.id,
     })
     
@@ -157,7 +157,7 @@ const Home = (props) => {
                       medium
                     </Dropdown.Item>
                     <Dropdown.Item
-                      id="high"
+                      id="heigh"
                       onClick={(e) =>
                         setNewBugData({
                           ...newBugData,
@@ -165,7 +165,7 @@ const Home = (props) => {
                         })
                       }
                     >
-                      high
+                      heigh
                     </Dropdown.Item>
                     <Dropdown.Item
                       id="critical"
